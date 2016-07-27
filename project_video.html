@@ -13,7 +13,11 @@
 	<link href="css/style.css" rel="stylesheet">
 
 	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/swiper_menu.js"></script>
+	<!--<script src="js/swiper.js"></script>-->
 	<script src="js/script.js"></script>
+
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
 	<![endif]-->
@@ -21,7 +25,7 @@
 
 <body><div>
 	<header class="header">
-		<div class="page-header-content">
+		<div class="page-header-content page-project-video">
 			<div class="page-title">
 				Проекты
 			</div>
@@ -36,6 +40,9 @@
 		<div class="menu-popup">
 			<div class="menu-popup-inner">
 				<div class="button-menu" id="menu-button-close"></div>
+				<a class="logo" href="#">
+					<img src="img/logo.png" alt="">
+				</a>
 				<ul class="popup-menu">
 					<li class="pm-item"><a class="pm-item-link" href="">НАШИ ПРОЕКТЫ</a></li>
 					<li class="pm-item"><a class="pm-item-link" href="">команда</a></li>
@@ -53,16 +60,34 @@
 		</div>
 	</header>
 	<section class="main">
-		<ul class="project-menu project-menu">
-			<li class="project-menu-item"><a class="project-menu-item-link active" href="">Все</a></li>
-			<li class="project-menu-item"><a class="project-menu-item-link" href="">ads</a></li>
-			<li class="project-menu-item"><a class="project-menu-item-link" href="">vfx</a></li>
-			<li class="project-menu-item"><a class="project-menu-item-link" href="">films</a></li>
-			<li class="project-menu-item"><a class="project-menu-item-link" href="">tech</a></li>
-			<li class="project-menu-item"><a class="project-menu-item-link" href="">casting</a></li>
-			<li class="project-menu-item"><a class="project-menu-item-link" href="">school</a></li>
-			<li class="project-menu-item"><a class="project-menu-item-link" href="">event</a></li>
-		</ul>
+
+		<!--todo: меню для адаптива-->
+		<div class="menu-cont video-menu-cont video-menu-cont-swiper menu-cont-mini">
+			<ul class="project-menu project-menu">
+				<li class="project-menu-item active"><a class="project-menu-item-link" href="">Все</a></li>
+				<li class="project-menu-item"><a class="project-menu-item-link" href="">ads</a></li>
+				<li class="project-menu-item"><a class="project-menu-item-link" href="">vfx</a></li>
+				<li class="project-menu-item"><a class="project-menu-item-link" href="">films</a></li>
+				<li class="project-menu-item"><a class="project-menu-item-link" href="">tech</a></li>
+				<li class="project-menu-item"><a class="project-menu-item-link" href="">casting</a></li>
+				<li class="project-menu-item"><a class="project-menu-item-link" href="">school</a></li>
+				<li class="project-menu-item"><a class="project-menu-item-link" href="">event</a></li>
+			</ul>
+		</div>
+
+		<!--todo: меню для дектопа-->
+		<div class="menu-cont menu-cont-big">
+			<ul class="project-menu project-menu">
+				<li class="project-menu-item active"><a class="project-menu-item-link" href="">Все</a></li>
+				<li class="project-menu-item"><a class="project-menu-item-link" href="">ads</a></li>
+				<li class="project-menu-item"><a class="project-menu-item-link" href="">vfx</a></li>
+				<li class="project-menu-item"><a class="project-menu-item-link" href="">films</a></li>
+				<li class="project-menu-item"><a class="project-menu-item-link" href="">tech</a></li>
+				<li class="project-menu-item"><a class="project-menu-item-link" href="">casting</a></li>
+				<li class="project-menu-item"><a class="project-menu-item-link" href="">school</a></li>
+				<li class="project-menu-item"><a class="project-menu-item-link" href="">event</a></li>
+			</ul>
+		</div>
 
 		<div class="video-preview-block project-block">
 
@@ -120,19 +145,19 @@
 
 				<div class="preview-top-text">Big bag films</div>
 			</a>
+			<a href="#" class="preview video-play-button">
+				<div class="preview-img" style="background-image: url(img/projects/1.jpg);"></div>
+				<div class="preview-hover"></div>
+				<div class="play-button"></div>
+
+				<div class="preview-top-text">Big bag films</div>
+			</a>
 			<a href="#" class="preview preview-big video-play-button">
 				<div class="preview-img" style="background-image: url(img/projects/3.jpg);"></div>
 				<div class="preview-hover"></div>
 				<div class="play-button"></div>
 
 				<!--<img src="img/projects/3.jpg">-->
-
-				<div class="preview-top-text">Big bag films</div>
-			</a>
-			<a href="#" class="preview video-play-button">
-				<div class="preview-img" style="background-image: url(img/projects/1.jpg);"></div>
-				<div class="preview-hover"></div>
-				<div class="play-button"></div>
 
 				<div class="preview-top-text">Big bag films</div>
 			</a>

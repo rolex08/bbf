@@ -25,19 +25,7 @@ $('document').ready(function(){
     $menuButton.click(function(){
         $menuPopup.appendTo('body').slideDown();
     });
-    //$menuButton.click(function(){
-    //    if ($(this).hasClass('active')) {
-    //        $(this).removeClass('active');
-    //        $menuPopup.slideUp(function(){
-    //            $(this).detach();
-    //        });
-    //
-    //    } else {
-    //        $(this).addClass('active');
-    //        $popup.appendTo('body').slideDown();
-    //    }
-    //})
-});
+
 $('body').delegate('.portfolio-item','hover', function( event ) {
     if( event.type === 'mouseenter' )
         $(this).find('img').stop(true,true).fadeTo( 500, 0.7 );
@@ -46,3 +34,4 @@ $('body').delegate('.portfolio-item','hover', function( event ) {
 } );
 
 
+});

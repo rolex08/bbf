@@ -13,6 +13,9 @@
 	<link href="css/style.css" rel="stylesheet">
 
 	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/swiper_menu.js"></script>
+	<!--<script src="js/swiper.js"></script>-->
 	<script src="js/script.js"></script>
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
@@ -38,6 +41,9 @@
 		<div class="menu-popup">
 			<div class="menu-popup-inner">
 				<div class="button-menu" id="menu-button-close"></div>
+				<a class="logo" href="#">
+					<img src="img/logo.png" alt="">
+				</a>
 				<ul class="popup-menu">
 					<li class="pm-item"><a class="pm-item-link" href="">НАШИ ПРОЕКТЫ</a></li>
 					<li class="pm-item"><a class="pm-item-link" href="">команда</a></li>
@@ -55,13 +61,28 @@
 		</div>
 	</header>
 	<section class="main">
-		<ul class="news-menu">
-			<li class="news-menu-item active"><a class="news-menu-item-link" href="">Все</a></li>
-			<li class="news-menu-item"><a class="news-menu-item-link" href="">новинки</a></li>
-			<li class="news-menu-item"><a class="news-menu-item-link" href="">live</a></li>
-			<li class="news-menu-item"><a class="news-menu-item-link" href="">советы</a></li>
-			<li class="news-menu-item"><a class="news-menu-item-link" href="">Другое</a></li>
-		</ul>
+
+		<!--todo: меню для адаптива-->
+		<div class="menu-cont  news-menu-cont news-menu-cont-swiper menu-cont-mini">
+			<ul class="news-menu">
+				<li class="news-menu-item active"><a class="news-menu-item-link" href="">Все</a></li>
+				<li class="news-menu-item"><a class="news-menu-item-link" href="">новинки</a></li>
+				<li class="news-menu-item"><a class="news-menu-item-link" href="">live</a></li>
+				<li class="news-menu-item"><a class="news-menu-item-link" href="">советы</a></li>
+				<li class="news-menu-item"><a class="news-menu-item-link" href="">Другое</a></li>
+			</ul>
+		</div>
+
+		<!--todo: меню для дектопа-->
+		<div class="menu-cont menu-cont-big">
+			<ul class="news-menu">
+				<li class="news-menu-item active"><a class="news-menu-item-link" href="">Все</a></li>
+				<li class="news-menu-item"><a class="news-menu-item-link" href="">новинки</a></li>
+				<li class="news-menu-item"><a class="news-menu-item-link" href="">live</a></li>
+				<li class="news-menu-item"><a class="news-menu-item-link" href="">советы</a></li>
+				<li class="news-menu-item"><a class="news-menu-item-link" href="">Другое</a></li>
+			</ul>
+		</div>
 
  		<div class="news-block">
 			<a href="" class="news-preview preview-big">
