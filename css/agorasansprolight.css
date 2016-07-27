@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'pf_agora_sans_prolight';
+    src: url('agorasansprolight.eot');
+    src: url('agorasansprolight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/agorasansprolight.woff2') format('woff2'),
+         url('agorasansprolight.woff') format('woff'),
+         url('agorasansprolight.ttf') format('truetype'),
+         url('agorasansprolight.svg#pf_agora_sans_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
