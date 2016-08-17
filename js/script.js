@@ -13,7 +13,7 @@ $('document').ready(function(){
     });
 
 
-    var $menuButton = $('#menu-button'),
+    var $menuButton = $('.menu-button-js'),
         $menuPopup      = $('.menu-popup'),
         $popupMenuHide  = $('#menu-button-close');
     $menuPopup.detach();
@@ -33,5 +33,16 @@ $('body').delegate('.portfolio-item','hover', function( event ) {
     if ( ! $(this).hasClass('et_active_item') ) $(this).find('img').stop(true,true).fadeTo( 500, 1 );
 } );
 
+    $(window).scroll(function() {
+        var
+            $this = $(this),
+            $toolbar = $('#toolbar'),
+            $prevElement = $toolbar.prevAll(':not(:empty):visible:first'),
+            prevElementBottom = 0,
+            ifFixed = prevElementBottom < $this.scrollTop();
+
+        $toolbar.toggleClass('fixed', ifFixed);
+    });
+    
 
 });
